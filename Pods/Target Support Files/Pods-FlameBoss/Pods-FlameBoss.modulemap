@@ -1,0 +1,6 @@
+framework module Pods_FlameBoss {
+  umbrella header "Pods-FlameBoss-umbrella.h"
+
+  export *
+  module * { export * }
+}

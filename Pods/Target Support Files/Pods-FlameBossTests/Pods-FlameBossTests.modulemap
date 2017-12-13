@@ -1,0 +1,6 @@
+framework module Pods_FlameBossTests {
+  umbrella header "Pods-FlameBossTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

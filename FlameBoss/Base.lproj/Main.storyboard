@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gad-cB-4Ff">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="lvn-Gg-0iJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="43u-rb-dyM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="p7F-IQ-MHz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxW-ll-lrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-412"/>
+        </scene>
+        <!--Smoker Setup View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SmokerSetupViewController" id="BYZ-38-t0r" customClass="SmokerSetupViewController" customModule="FlameBoss" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-qh-mYk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
+                                <connections>
+                                    <segue destination="U3Q-os-N14" kind="embed" id="NgP-He-dQ3"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wke-su-AbE">
+                                <rect key="frame" x="300" y="624" width="75" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="PbI-LJ-djZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.16862745100000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="fqG-01-vBV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-HJ-8Zs">
+                                <rect key="frame" x="0.0" y="624" width="75" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="4oM-xQ-sov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.16862745100000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpW-xC-7kE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryi-Ud-kGt">
+                                <rect key="frame" x="150" y="624" width="75" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="y11-Yl-4d0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.16862745100000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEY-xg-VBs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wke-su-AbE" firstAttribute="top" secondItem="dgU-qh-mYk" secondAttribute="bottom" id="4AB-Es-Rnl"/>
+                            <constraint firstAttribute="trailing" secondItem="Wke-su-AbE" secondAttribute="trailing" id="5Wp-kk-DAj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryi-Ud-kGt" secondAttribute="bottom" id="6mp-dr-mDD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wke-su-AbE" secondAttribute="bottom" id="7eB-uX-2s4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cIh-HJ-8Zs" secondAttribute="bottom" id="EN1-hu-rQV"/>
+                            <constraint firstItem="cIh-HJ-8Zs" firstAttribute="top" secondItem="dgU-qh-mYk" secondAttribute="bottom" id="JFd-uy-Bbg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dgU-qh-mYk" secondAttribute="bottom" constant="43" id="Jx9-Wa-r87"/>
+                            <constraint firstItem="dgU-qh-mYk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kzw-co-Po5"/>
+                            <constraint firstItem="cIh-HJ-8Zs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N4X-ln-BcV"/>
+                            <constraint firstItem="ryi-Ud-kGt" firstAttribute="top" secondItem="dgU-qh-mYk" secondAttribute="bottom" id="V93-fA-Z9o"/>
+                            <constraint firstAttribute="trailing" secondItem="dgU-qh-mYk" secondAttribute="trailing" id="szh-lB-lPN"/>
+                            <constraint firstItem="ryi-Ud-kGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8B-LZ-Geo"/>
+                            <constraint firstItem="dgU-qh-mYk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y6a-zJ-knj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="cIh-HJ-8Zs" id="b7i-ra-Oz2"/>
+                        <outlet property="cancelButton" destination="ryi-Ud-kGt" id="aun-b3-VYD"/>
+                        <outlet property="nextButton" destination="Wke-su-AbE" id="cu0-FV-Oda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="-170"/>
+        </scene>
+        <!--Smoker Setup Page View Controller-->
+        <scene sceneID="D7f-6H-rLh">
+            <objects>
+                <pageViewController storyboardIdentifier="SmokerSetupPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="U3Q-os-N14" customClass="SmokerSetupPageViewController" customModule="FlameBoss" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2Y-Hx-hOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="-171"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="F2a-B6-rIO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gad-cB-4Ff" customClass="FBTabBarController" customModule="FlameBoss" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gMI-PU-2Y8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="43u-rb-dyM" kind="relationship" relationship="viewControllers" id="7Kc-Zz-69J"/>
+                        <segue destination="T6U-Mb-hIo" kind="relationship" relationship="viewControllers" id="D8i-Cv-vfj"/>
+                        <segue destination="HC4-zO-VJ8" kind="relationship" relationship="viewControllers" id="qkb-aL-JYy"/>
+                        <segue destination="eLP-z1-dhZ" kind="relationship" relationship="viewControllers" id="TPY-IB-3mC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pz7-SX-jR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634.39999999999998" y="-169.56521739130437"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="BAQ-10-hAY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="HC4-zO-VJ8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9gz-dw-fAG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdo-jQ-EgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-170"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="xrm-Gb-j8n">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AccountViewController" storyboardName="Account" id="eLP-z1-dhZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dbE-kZ-xki"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQX-VZ-90b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="51"/>
+        </scene>
+        <!--SmokerController-->
+        <scene sceneID="F8p-2h-hgj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SmokerControllerViewController" storyboardName="SmokerController" id="T6U-Mb-hIo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="29x-Be-0E9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNG-w3-Hkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-267"/>
+        </scene>
+    </scenes>
+</document>
